@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./js/reset.css">
+    <link rel="stylesheet" type="text/css" href="./js/border.css">
+    <link rel="stylesheet" type="text/css" href="./js/index.css">
+    <link rel="stylesheet" type="text/css" href="./js/casino.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/pinyin.js"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <script>
+        $(document).ready(function () {
+            $("#header").load("http://127.0.0.1:5500/public/header.html")
+        })
+    </script>
+
+    <div class="banner">
+        <div class="banner-img1 banner-show"></div>
+        <div class="banner-img2 banner-show"></div>
+    </div>
+    <script>
+        $(function(){
+            setInterval(() => {
+                $(".banner-show").toggle()
+            },1000);
+        })
+    </script>
+    <div class="casino-wrap">
+        <div class="casino-tab link-list">
+            <a href="javascript:void(0)" class="first-tag active">PT</a>
+            <a href="javascript:void(0)" class="first-tag">DT</a>
+            <a href="javascript:void(0)" class="first-tag">CQ9</a>
+            <a href="javascript:void(0)" class="first-tag">SW</a>
+            <a href="javascript:void(0)" class="first-tag">PP</a>
+            <a href="javascript:void(0)" class="first-tag">MG</a>
+            <a href="javascript:void(0)" class="first-tag">PG</a>
+            <a href="javascript:void(0)" class="first-tag">QT</a>
+            <a href="javascript:void(0)" class="first-tag">BBIN</a>
+            <a href="javascript:void(0)" class="first-tag">PNG</a>
+            <a href="javascript:void(0)" class="first-tag">LG</a>
+            <a href="javascript:void(0)" class="first-tag">XIN</a>
+        </div>
+        <div class="casino-content">
+            <div class="search-head">
+                <span class="title fl">搜索游戏</span>
+                <div class="ipt-wrap fl">
+                    <input class="search-ipt" type="text" placeholder="请输入游戏名">
+                    <div class="search-list" style="display: none;"></div>
+                    <button class="ipt-tbn">搜索</button>
+                    <button class="ipt-reset">重新选择</button>
+                </div>
+                <div class="bookmark fr">
+                    <button>我的收藏</button>
+                    <button>最近玩过</button>
+                </div>
+            </div>
+            <div class="search-filter">
+                <div class="content-wrap">
+                    <div class="content-title">全部平台:
+                    </div>
+                    <div class="content-list link-list">
+                        <a href="javascript:void(0)" class='second-tag active'>PT</a>
+                        <a href="javascript:void(0)" class='second-tag'>DT</a>
+                        <a href="javascript:void(0)" class='second-tag'>CQ9</a>
+                        <a href="javascript:void(0)" class='second-tag'>SW</a>
+                        <a href="javascript:void(0)" class='second-tag'>PP</a>
+                        <a href="javascript:void(0)" class='second-tag'>MG</a>
+                        <a href="javascript:void(0)" class='second-tag'>PG</a>
+                        <a href="javascript:void(0)" class='second-tag'>QT</a>
+                        <a href="javascript:void(0)" class='second-tag'>BBIN</a>
+                        <a href="javascript:void(0)" class='second-tag'>PNG</a>
+                        <a href="javascript:void(0)" class='second-tag'>LG</a>
+                        <a href="javascript:void(0)" class='second-tag'>XIN</a>
+                    </div>
+                </div>
+                <div class="content-wrap">
+                    <div class="content-title">游戏大厅:
+                    </div>
+                    <div class="content-list platform">
+                        <a class="active" href="javascript:void(0)" tag="all">全选</a>
+                        <a href="javascript:void(0)" tag="hot">热门游戏</a>
+                        <a href="javascript:void(0)" tag="new">新游戏</a>
+                        <a href="javascript:void(0)" tag="recently">近期爆分</a>
+                        <a href="javascript:void(0)" tag="min">小额投注</a>
+                        <a href="javascript:void(0)" tag="max">大额投注</a>
+                    </div>
+                </div>
+                <div class="content-wrap">
+                    <div class="content-title">游戏类型:
+                    </div>
+                    <div class="content-list">
+                        <a class="active" href="javascript:void(0)">全选</a>
+                        <a href="javascript:void(0)">经典老虎机</a>
+                        <a href="javascript:void(0)">多线老虎机</a>
+                        <a href="javascript:void(0)">奖池游戏</a>
+                    </div>
+                </div>
+                <div class="content-wrap">
+                    <div class="content-title">游戏线数:
+                    </div>
+                    <div class="content-list">
+                        <a class="active" href="javascript:void(0)">全选</a>
+                        <a href="javascript:void(0)">1-10线</a>
+                        <a href="javascript:void(0)">11-50线</a>
+                        <a href="javascript:void(0)">更多</a>
+                    </div>
+                </div>
+            </div>
+            <div class="game-wrap">
+            </div>
+        </div>
+    </div>
+    <script>
+        // 导航点击
+    $(function(){
+        $(".link-list a").click(function(){
+            let idx = $(this).index()
+            $(".first-tag").eq(idx).addClass("active").siblings().removeClass("active")
+            $(".second-tag").eq(idx).addClass("active").siblings().removeClass("active")
+            let target = $(this).html()
+            $('.game-item').hide()
+            $('.game-item').filter(function(){
+            return $(this).attr('platform') === target
+        }).show()
+        })
+    })
+        // 小导航点击
+    $(function(){
+        $(".platform a").click(function(){
+            $(this).addClass("active").siblings().removeClass("active")
+            let target = $(this).attr('tag')
+            if(target === "all"){
+                $('.game-item').hide()
+                $('.game-item').filter(function(){
+                   return $(this).hasClass('game-item')
+                }).show()
+            }else{
+                $('.game-item').hide()
+                $('.game-item').filter(function(){
+                   return $(this).attr('tag') === target
+                }).show()
+            }
+        })
+    })  
+    
+    </script>
+    <script>
+        //获取游戏数据
+    $(function(){
+        $.ajax({
+        url: "http://127.0.0.1:5500/api/api.json",
+        type: "get",
+        dataType: "json",
+        cache: false,
+            success: function(result){
+                let html =''
+                let res = result.gameList
+                $.each(res, function(key, value){
+                    html += `<div class="game-item" platform="`+res[key].platform+`" tag="`+res[key].tag+`" game-name="`+res[key].name+`">
+                                <div class="game-pic">
+                                    <img src="`+ res[key].url +`" alt="">
+                                    <div class="mask"></div>
+                                </div>
+                                <p class="gameName">`+ res[key].name +`</p>
+                                <div class="btn">
+                                    <button>试玩</button>
+                                    <button>真钱</button>
+                                </div>
+                            </div>`
+                })
+                $('.game-wrap').html(html)
+
+                // 搜索匹配
+                let gameItem = [...res]
+                let engine = new PinyinEngine(gameItem, ['name']);
+                // let oldVal = $input.val()
+
+                $(".search-ipt").bind("input propertychange",function(event){
+                    let val = $(".search-ipt").val()
+                    // if (val === oldVal) return;
+                    // oldVal = $input.value;
+                    
+                    let ulHtml = []
+                    if (val == '') {
+                        $(".search-list").slideUp()
+                    } else {
+                        $(".search-list").slideDown()
+                        let newList = engine.query(val)
+                        $.each(newList, function (key, value) {
+                            ulHtml.push('<li>'+ value.name + '</li>');
+                        })
+                        ulHtml = ulHtml.join('');
+                        ulHtml = '<ul>' + ulHtml + '</ul>'
+                    }
+                    $(".search-list").html(ulHtml)
+                })
+
+                //  搜索框选择
+                $(document).on('click',".search-list li",function(){
+                    let val = $(this).text()
+                    $(".search-ipt").val(val)
+                    $(".search-list").slideUp()
+                })
+
+                //  选择后查询
+                $(".ipt-tbn").click(function(){
+                    let val = $(".search-ipt").val()
+                    if(val == '') return
+                    $(".search-list").slideUp()
+                    let checkList = engine.query(val)
+                    let html = ''
+                    console.log(checkList)
+                    if(checkList.length == 0){
+                        checkHtml.push(`<div class="no-result">没有找到相关游戏</div>`)
+                    }else {
+                        $.each(checkList, function(key, value){
+                        // console.log(value)
+                        html +=`<div class="game-item" platform="`+value.platform+`" tag="`+value.tag+`" game-name="`+value.name+`">
+                                <div class="game-pic">
+                                    <img src="`+ value.url +`" alt="">
+                                    <div class="mask"></div>
+                                </div>
+                                <p class="gameName">`+ value.name +`</p>
+                                <div class="btn">
+                                    <button>试玩</button>
+                                    <button>真钱</button>
+                                </div>
+                            </div>`
+                        })
+                    }
+                    $('.game-wrap').html(html)
+                    $(".search-ipt").val('')
+                })                
+            }
+        })
+    })
+
+    // 滚动置顶搜索框
+    document.addEventListener('scroll', function(){
+        // console.log(document.documentElement.scrollTop)
+        if(document.documentElement.scrollTop >515){
+            $(".search-head").addClass("float")
+        }else {
+            $(".search-head").removeClass("float")
+        }
+    })
+    </script>
+
+
+   <!-- sidebar -->
+   <div id="sidebar"></div>
+   <script>
+       $(document).ready(function () {
+           $("#sidebar").load("http://127.0.0.1:5500/public/sidebar.html")
+       })
+   </script>
+
+    <div id="footer"></div>
+    <script>
+        $(document).ready(function () {
+            $("#footer").load("http://127.0.0.1:5500/public/footer.html")
+        })
+    </script>
+    
+</body>
+
+</html>

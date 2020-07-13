@@ -1,0 +1,291 @@
+<header class="header-container">
+    <div class="header-wrapper border-bottom">
+        <div class="header">
+            <div class="notice">
+                <span></span>
+                <span>最新公告:</span>
+                <span class="float-wrap" id="float-wrap">
+                    <div class="float-content" id="float-content1">
+                        <p>A【热门老虎机】</p>
+                        <p>B【热门老虎机】</p>
+                        <p>C【热门老虎机】</p>
+                        <p>D【热门老虎机】</p>
+                    </div>
+                    <div id="float-content2"></div>
+                </span>
+                <span class="toggle-icon"></span>
+            </div>
+            <div class="user">
+                <button class="btn register-btn">注册</button>
+                <button class="btn login-btn">登陆</button>
+                <p>加入收藏</p>
+            </div>
+        </div>
+        <div class="news">
+            <div class="news-content" style="display: none;">
+                <p>1、【热门老虎机】 充30送18、充300送108（2选1） 前往个人中心-优惠-自助存送申请 热门老虎机包括：PT/综合老虎机（DT/MG/SW/QT/PNG）/CQ9/PG/PP 【真人与棋牌】 转账存款赠现金/空降嫩模/积分好礼 2020-06-25;</p>
+                <p>2、尊敬的龙8会员，您好： DG真人游戏平台已经维护完成，您现在已可以正常转账进入游戏。龙8国际感谢您的支持和关注，祝您游戏愉快。 龙8客服部 2020年6月25日;</p>
+                <p>3、尊敬的龙8会员，您好： 为了带给您更好的游戏体验，DG真人游戏平台所有游戏将于2020年6月25日上午7：00到8:30进行例行维护升级。维护期间您无法进行游戏和转账，维护完成后将另行公告通知，由此给您带来不便敬请谅解。龙8国际感谢您的支持和关注，祝您游戏愉快！ 龙8客服部 2020年6月25日;</p>
+                <p>4、【热门老虎机】 充30送21、充500送180（2选1） 前往个人中心-优惠-自助存送申请 热门老虎机包括：PT/综合老虎机（DT/MG/SW/QT/PNG）/CQ9/PG/PP 【真人与棋牌】 转账存款赠现金/空降嫩模/积分好礼 2020-06-24;</p>
+            </div>
+        </div>
+    </div>
+    <script>
+    function textFloat(){
+        var demo = document.getElementById("float-wrap");
+        var demo1 = document.getElementById("float-content1");
+        var demo2 = document.getElementById("float-content2");
+        demo2.innerHTML = document.getElementById("float-content1").innerHTML;
+
+        function Marquee() {
+            if (demo.scrollLeft - demo2.offsetWidth >= 0) {
+                demo.scrollLeft -= demo1.offsetWidth;
+            } else {
+                demo.scrollLeft++;
+            }
+        }
+        var myvar = setInterval(Marquee, 30);
+        demo.onmouseout = function() {
+            myvar = setInterval(Marquee, 30);
+        }
+        demo.onmouseover = function() {
+            clearInterval(myvar);
+        }    
+    }
+    textFloat()
+
+    $(function(){
+        $(".notice").hover(function(){
+        $(".toggle-icon").css({"transform": "rotate(180deg)"})
+        $(".news-content").show()
+    },function(){
+        $(".toggle-icon").css({"transform": "rotate(0deg)"})
+        $(".news-content").hide()
+    })
+    })
+    </script>
+
+    <div class="navbar">
+        <ul class="navbar-container">
+            <li class="logo"><img src="https://long127.com/images/logo.png?v=6" alt=""></li>
+            <li class="nav"><a href="index.html">首页</a></li>
+            <li class="nav nav-hover"><a href="casino.html">老虎机</a></li>
+            <li class="nav nav-hover"><a href="">棋牌</a></li>
+            <li class="nav nav-hover"><a href="">真人</a></li>
+            <li class="nav nav-hover"><a href="">体育电竞</a></li>
+            <li class="nav nav-hover"><a href="">捕鱼</a></li>
+            <li class="nav nav-hover"><a href="">彩票</a></li>
+            <li class="nav-right">
+                <a href="">
+                    <img src="assets/VIP.png" alt="">
+                    <p>会员俱乐部</p>
+                </a>
+                <a href="">
+                    <img src="assets/VIP.png" alt="">
+                    <p>优惠</p>
+                </a>
+                <a href="">
+                    <img src="assets/VIP.png" alt="">
+                    <p>帮助中心</p>
+                </a>
+                <a href="">
+                    <img src="assets/VIP.png" alt="">
+                    <p>下载中心</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="hover-nav" style="display: none;">
+        <div class="wrapper">
+            <ul class="wrapper-list casino" style="display: block;">
+                <li class="first">
+                    <h3>老虎机1</h3>
+                    <h4>1%自助洗码</h4>
+                    <h4>10%输钱返还</h4>
+                    <h4>100%首存红利</h4>
+                </li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+            </ul>
+            <ul class="wrapper-list chess" style="display: block;">
+                <li class="first">
+                    <h3>棋牌2</h3>
+                    <h4>扑克麻将休闲博弈</h4>
+                    <h4>588 元</h4>
+                    <h4>首存可领</h4>
+                </li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+
+            </ul>
+            <ul class="wrapper-list casino" style="display: block;">
+                <li class="first">
+                    <h3>老虎机3</h3>
+                    <h4>1%自助洗码</h4>
+                    <h4>10%输钱返还</h4>
+                    <h4>100%首存红利</h4>
+                </li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+            </ul>
+            <ul class="wrapper-list chess" style="display: block;">
+                <li class="first">
+                    <h3>棋牌4</h3>
+                    <h4>扑克麻将休闲博弈</h4>
+                    <h4>588 元</h4>
+                    <h4>首存可领</h4>
+                </li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+
+            </ul>
+            <ul class="wrapper-list casino" style="display: block;">
+                <li class="first">
+                    <h3>老虎机5</h3>
+                    <h4>1%自助洗码</h4>
+                    <h4>10%输钱返还</h4>
+                    <h4>100%首存红利</h4>
+                </li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+                <li>老虎机</li>
+            </ul>
+            <ul class="wrapper-list chess" style="display: block;">
+                <li class="first">
+                    <h3>棋牌6</h3>
+                    <h4>扑克麻将休闲博弈</h4>
+                    <h4>588 元</h4>
+                    <h4>首存可领</h4>
+                </li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+                <li><a href="">
+                    <img src="https://long127.com/images/header/chess/ky.png">
+                    <p>开元棋牌</p>
+                </a></li>
+
+            </ul>
+        </div>
+    </div>
+    <script>
+    $(function(){
+        $(".nav-hover").hover(function(){
+            $(".hover-nav").show()
+            let $index =$(this).index()-2
+            $(".wrapper-list").eq($index).show().siblings(".wrapper-list").hide()
+            },function(){
+            $(".hover-nav").hide()
+        })
+        $(".hover-nav").mouseenter(function(){
+            $(this).show()
+        })
+        $(".hover-nav").mouseleave(function(){
+            $(this).hide()
+        })
+    })
+
+    </script>
+</header>

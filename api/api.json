@@ -1,0 +1,92 @@
+{
+    "success":true,
+    "promodata":[
+        {
+            "promoid": "01",
+            "title": "7月6日推荐优惠",
+            "text": "【热门老虎机】</br> 充30送30、充300送120（2选1）</br> 前往个人中心-优惠-自助存送申请 </br> 热门老虎机包括：PT/综合老虎机）（DT/MG/SW/QT/PNG）/CQ9/PG/PP</br> 【真人与棋牌】</br> 转账存款赠现金/空降嫩模/积分好礼"
+        },
+        {
+            "promoid": "02",
+            "title": "PT中奖喜讯：115万头奖",
+            "text": "恭喜浙江省杭州市玩家L8***62 2020年6月24"
+        },
+        {
+            "promoid": "03",
+            "title": "7月6日推荐优惠",
+            "text": "【热门老虎机】</br> 充30送30、充300送120（2选1）</br> 前往个人中心-优惠-自助存送申请 </br> 热门老虎机包括：PT/综合老虎机）（DT/MG/SW/QT/PNG）/CQ9/PG/PP</br> 【真人与棋牌】</br> 转账存款赠现金/空降嫩模/积分好礼"
+        },
+        {
+            "promoid": "04",
+            "title": "PT中奖喜讯：115万头奖",
+            "text": "恭喜浙江省杭州市玩家L8***62 2020年6月24"
+        },
+        {
+            "promoid": "03",
+            "title": "7月6日推荐优惠",
+            "text": "【热门老虎机】</br> 充30送30、充300送120（2选1）</br> 前往个人中心-优惠-自助存送申请 </br> 热门老虎机包括：PT/综合老虎机）（DT/MG/SW/QT/PNG）/CQ9/PG/PP</br> 【真人与棋牌】</br> 转账存款赠现金/空降嫩模/积分好礼"
+        },
+        {
+            "promoid": "04",
+            "title": "PT中奖喜讯：115万头奖",
+            "text": "恭喜浙江省杭州市玩家L8***62 2020年6月24"
+        }
+    ],
+    "withdrow": [
+        { "username": "L8*****1", "time":"07-07 11.01", "amount":"100"},
+        { "username": "L8*****2", "time":"07-07 11.02", "amount":"200"},
+        { "username": "L8*****3", "time":"07-07 11.03", "amount":"300"},
+        { "username": "L8*****4", "time":"07-07 11.04", "amount":"400"},
+        { "username": "L8*****5", "time":"07-07 11.05", "amount":"500"}
+    ],
+    "gameList": [
+        { "name": "PT1热门", "platform": "PT", "tag": "hot", "url":"./assets/casino/PT.png" },
+        { "name": "PT2热门", "platform": "PT", "tag": "hot", "url":"./assets/casino/PT.png" },
+        { "name": "PT3新游戏", "platform": "PT", "tag": "new", "url":"./assets/casino/PT.png" },
+        { "name": "PT4爆分游戏", "platform": "PT", "tag": "recently", "url":"./assets/casino/PT.png" },
+        { "name": "小飞象", "platform": "DT", "url":"./assets/casino/DT.png" },
+        { "name": "DT2", "platform": "DT", "url":"./assets/casino/DT.png" },
+        { "name": "DT3", "platform": "DT", "url":"./assets/casino/DT.png" },
+        { "name": "DT4", "platform": "DT", "url":"./assets/casino/DT.png" },
+        { "name": "CQ9-1", "platform": "CQ9", "url":"./assets/casino/CQ9.png" },
+        { "name": "CQ9-2", "platform": "CQ9", "url":"./assets/casino/CQ9.png" },
+        { "name": "CQ9-3", "platform": "CQ9", "url":"./assets/casino/CQ9.png" },
+        { "name": "CQ9-4", "platform": "CQ9", "url":"./assets/casino/CQ9.png" },
+        { "name": "SW1", "platform": "SW", "url":"./assets/casino/SW.png" },
+        { "name": "SW2", "platform": "SW", "url":"./assets/casino/SW.png" },
+        { "name": "SW3", "platform": "SW", "url":"./assets/casino/SW.png" },
+        { "name": "SW4", "platform": "SW", "url":"./assets/casino/SW.png" },
+        { "name": "PP1", "platform": "PP", "url":"./assets/casino/PP.png" },
+        { "name": "PP2", "platform": "PP", "url":"./assets/casino/PP.png" },
+        { "name": "PP3", "platform": "PP", "url":"./assets/casino/PP.png" },
+        { "name": "PP4", "platform": "PP", "url":"./assets/casino/PP.png" },
+        { "name": "MG1", "platform": "MG", "url":"./assets/casino/MG.png" },
+        { "name": "MG2", "platform": "MG", "url":"./assets/casino/MG.png" },
+        { "name": "MG3", "platform": "MG", "url":"./assets/casino/MG.png" },
+        { "name": "MG4", "platform": "MG", "url":"./assets/casino/MG.png" },
+        { "name": "PG1", "platform": "PG", "url":"./assets/casino/PG.png" },
+        { "name": "PG2", "platform": "PG", "url":"./assets/casino/PG.png" },
+        { "name": "PG3", "platform": "PG", "url":"./assets/casino/PG.png" },
+        { "name": "PG4", "platform": "PG", "url":"./assets/casino/PG.png" },
+        { "name": "QT1", "platform": "QT", "url":"./assets/casino/QT.png" },
+        { "name": "QT2", "platform": "QT", "url":"./assets/casino/QT.png" },
+        { "name": "QT3", "platform": "QT", "url":"./assets/casino/QT.png" },
+        { "name": "QT4", "platform": "QT", "url":"./assets/casino/QT.png" },
+        { "name": "BBIN1", "platform": "BBIN", "url":"./assets/casino/BBIN.png" },
+        { "name": "BBIN2", "platform": "BBIN", "url":"./assets/casino/BBIN.png" },
+        { "name": "BBIN3", "platform": "BBIN", "url":"./assets/casino/BBIN.png" },
+        { "name": "BBIN4", "platform": "BBIN", "url":"./assets/casino/BBIN.png" },
+        { "name": "PNG1", "platform": "PNG", "url":"./assets/casino/PNG.png" },
+        { "name": "PNG2", "platform": "PNG", "url":"./assets/casino/PNG.png" },
+        { "name": "PNG3", "platform": "PNG", "url":"./assets/casino/PNG.png" },
+        { "name": "PNG4", "platform": "PNG", "url":"./assets/casino/PNG.png" },
+        { "name": "LG1", "platform": "LG", "url":"./assets/casino/LG.png" },
+        { "name": "LG2", "platform": "LG", "url":"./assets/casino/LG.png" },
+        { "name": "LG3", "platform": "LG", "url":"./assets/casino/LG.png" },
+        { "name": "LG4", "platform": "LG", "url":"./assets/casino/LG.png" },
+        { "name": "XIN1", "platform": "XIN", "url":"./assets/casino/XIN.png" },
+        { "name": "XIN2", "platform": "XIN", "url":"./assets/casino/XIN.png" },
+        { "name": "XIN3-min", "platform": "XIN", "tag": "min", "url":"./assets/casino/XIN.png" },
+        { "name": "XIN4-max", "platform": "XIN", "tag": "max", "url":"./assets/casino/XIN.png" }
+    ]
+}

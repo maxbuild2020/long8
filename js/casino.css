@@ -1,0 +1,189 @@
+.casino-wrap{
+    width: 100%;
+    background:#191C22;
+    
+}
+.banner {
+    background: url('https://long127.com/images/banner/slotbg.jpg') no-repeat top center;
+    height: 6rem;
+    position: relative;
+    /* text-align: center; */
+}
+.banner .banner-show{
+    width: 8.26rem;
+    height: 3.2rem;
+    top: 1.6rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+}
+.banner .banner-img1{
+    background: url('https://long127.com/images/banner/slot-text.png') no-repeat bottom center;
+}
+.banner .banner-img2{
+    background: url('https://long127.com/images/banner/slot-hover.png') no-repeat bottom center;
+    display: none;
+}
+
+.casino-wrap .casino-tab{
+    width: 24rem;
+    margin: 0 auto;
+    background: #212429;
+    margin-bottom: .4rem;
+}
+.casino-tab a{
+    display: inline-block;
+    line-height: 1.1rem;
+    width: 1.84rem;
+    color: #999;
+    font-size: .36rem;
+    text-align: center;
+    /* box-sizing: border-box; */
+}
+.casino-tab a:hover, .casino-tab .active{
+    background-color: #2D3034;
+    border-bottom: 0.08rem solid #D3B065;
+}
+.casino-content{
+    width: 24rem;
+    background: #2D3034;
+    margin: 0 auto;
+}
+.casino-content .search-head{
+    height: 1.5rem;
+    background: #23282C;
+    position: relative;
+    font-size: .36rem;
+    line-height: 1.5rem;
+}
+.casino-content .float{
+    position: fixed;
+    width: 24rem;
+    top: 0;
+    z-index: 200;
+}
+.search-head .title{
+    margin-left: .7rem;
+    font-size: .36rem;
+    color: #D3B065;
+}
+.casino-content .ipt-wrap{
+    display: inline-block;
+}
+.ipt-wrap input{
+    width: 6rem;
+    height: .68rem;
+    margin-left: .3rem;
+    background: #393D41;
+    border-radius: .1rem;
+    font-size: .3rem;
+    padding-left: .2rem;
+}
+.ipt-wrap button, .bookmark button{
+    background: #393D41 ;
+    color: #999999;
+    padding: .05rem .2rem;
+    border-radius: .1rem;
+    margin-left: .2rem;
+}
+.bookmark{
+    margin-right: 1rem;
+}
+.search-list {
+    background: #535860;
+    width: 6.2rem;
+    max-height: 5.12rem;
+    position: absolute;
+    left: 2.44rem;
+    top: 1.12rem;
+    z-index: 100;
+    overflow: hidden;
+}
+.search-filter {
+    margin: .4rem .6rem;
+    padding-bottom: .4rem;
+    border-bottom: 0.02rem dashed #444444;
+}
+.search-filter .content-wrap{
+    color: #999999;
+    display: block;
+    height: .76rem;
+    line-height: .76rem;
+}
+.search-filter .content-wrap .content-title{
+    font-size: .32rem;
+    color: #d8d8d8;
+    font-weight: bold;
+    margin-right: .5rem;
+}
+
+.search-filter .content-wrap .content-title, .search-filter .content-wrap .content-list{
+    display: inline-block;
+}
+.search-filter .content-list a {
+    padding: .1rem .15rem;
+    font-size: .32rem;
+}
+.search-filter .content-list a:hover, .search-filter .content-list .active{
+    background: #D3B065;
+    border-radius: .1rem;
+    color: black;
+}
+.link-list{
+    font-size: 0;
+}
+.game-wrap{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 .44rem;
+}
+.game-item{
+    background:#393D41;
+    display: inline-block;
+    width: 5rem;
+    height: 5.16rem;
+    margin: 0 .39rem .6rem .39rem;
+    text-align: center;
+}
+.game-item img{
+    width: 5rem;
+    height: 3.2rem;
+}
+.game-item p{
+    display: block;
+    line-height: .76rem;
+    text-align: center;
+    color: #dedede;
+    border-bottom: 0.01rem  dashed #444444;
+    font-size: .32rem;
+}
+.game-item button{
+    font-size: .32rem;
+    background: #393D41;
+    color:#ffff;
+    width: 2.1rem;
+    height: .64rem;
+    border: 0.01rem solid #dbae57;
+    border-radius: .4rem;
+    margin: .24rem .1rem;
+}
+
+.search-list li{
+    font-size: .32rem;
+    line-height: .64rem;
+    text-indent: .2rem;
+    color: #dedede;
+}
+.search-list li:hover{
+    background: #2D3034;
+}
+.no-result{
+    background: url('https://long127.com/images/game/null.png') no-repeat top center;
+    width: 100%;
+    height: 100px;
+    color: white;
+    padding: 5rem 0 0 10.5rem;
+}

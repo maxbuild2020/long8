@@ -1,0 +1,21 @@
+<div class="sidebar">
+    <div class="cs content">
+        <p>客服中心</p>
+    </div>
+    <div class="app content">
+        <h>下载APP 领88体验金</h>
+    </div>
+</div>
+<div class="mini-side" style="display: none;">
+    <img src="assets/code.jpg" alt="">
+    <p>下载APP领8-88体验金</p>
+</div>
+<script>
+$(function(){
+    $(".sidebar .app, .mini-side").hover(function(){
+        $(".mini-side").show()
+    },function(){
+        $(".mini-side").hide()
+    })
+})
+</script>
